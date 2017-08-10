@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_page4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/page1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.project.page4">
+
+    <TextView
+        android:text="Kcal"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Kcal1"
+        android:layout_alignBaseline="@+id/BMR2"
+        android:layout_alignBottom="@+id/BMR2"
+        android:layout_toEndOf="@+id/txv" />
+
+    <TextView
+        android:text="身體質量指數:"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BMI1"
+        android:layout_below="@+id/Kcal2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp" />
+
+    <TextView
+        android:text="基礎代謝率:"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txv"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="測試位置"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BMR2"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/txv"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="靜態能量消耗:"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/REE1"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Kcal1"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Kcal"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Kcal2"
+        android:layout_alignBaseline="@+id/REE2"
+        android:layout_alignBottom="@+id/REE2"
+        android:layout_alignStart="@+id/Kcal1" />
+
+    <Button
+        android:text="確定"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bt1"
+        android:layout_below="@+id/BMI2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp" />
+
+    <TextView
+        android:text="測試位置"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BMI2"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/BMI1"
+        android:layout_alignStart="@+id/REE2"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:text="測試位置"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/REE2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/BMR2" />
+</RelativeLayout>
